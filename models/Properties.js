@@ -16,7 +16,7 @@ const Properties = db.define('Properties', {
     },
     availability: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
+
     },
 
 })
