@@ -15,8 +15,9 @@ export default class OwnersController {
             name: req.body.name,
             phone: req.body.phone,
             address: req.body.address,
-            emai: req.body.emai,
+            email: req.body.email,
         }
+        console.log(owners)
         await Owners.create(owners)
             .then(res.redirect('/owners'))
             .catch((err) => console.log(err))
